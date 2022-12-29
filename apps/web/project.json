@@ -26,10 +26,8 @@
         "buildTarget": "web:build",
         "dev": true,
         "proxyConfig": "apps/web/proxy.conf.json",
-        "options": {
-          "host": "0.0.0.0",
-          "port": 8080
-        }
+        "host": "0.0.0.0",
+        "port": 8080
       },
       "configurations": {
         "development": {
@@ -38,18 +36,18 @@
         },
         "production": {
           "buildTarget": "web:build:production",
-          "dev": false,
-          "options": {
-            "host": "0.0.0.0",
-            "port": 8080
-          }
+          "dev": false
         }
       }
     },
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "web:build:production"
+        "buildTarget": "web:build:production",
+        "options": {
+          "host": "0.0.0.0",
+          "port": 8080
+        }
       }
     },
     "test": {
