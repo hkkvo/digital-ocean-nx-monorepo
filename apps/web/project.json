@@ -26,7 +26,7 @@
         "buildTarget": "web:build",
         "dev": true,
         "proxyConfig": "apps/web/proxy.conf.json",
-        "host": "0.0.0.0",
+        "hostname": "0.0.0.0",
         "port": 8080
       },
       "configurations": {
@@ -45,7 +45,7 @@
       "options": {
         "buildTarget": "web:build:production",
         "options": {
-          "host": "0.0.0.0",
+          "hostname": "0.0.0.0",
           "port": 8080
         }
       }
